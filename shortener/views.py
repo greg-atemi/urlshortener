@@ -8,6 +8,10 @@ def index(request):
     return render(request, 'index.html')
 
 
+def index2(request):
+    pass
+
+
 def create(request):
     if request.method == 'POST':
         url = request.POST['link']
