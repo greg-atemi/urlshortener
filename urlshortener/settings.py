@@ -118,3 +118,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 django_heroku.settings(locals())
 TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
+
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
